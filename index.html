@@ -22,8 +22,8 @@
             <li id="cho_btn" class="botton"><img src="./img/paris.jpg" alt="" width="100"></li>
             <li id="par_btn" class="botton"><img src="./img/paris2.png" alt="" width="100"></li>
         </ul>
-
-        <div class="osusume"><p>おすすめはこちら</p>
+        
+        <di id="hiddenosusume" class="osusume"><p>おすすめはこちら</p>
         <div class="container">
         <!-- main おすすめの場所を名前 左 ルーブル、オルセー、ブルス-->
         <div id="osusume_title" class="item item-big"></div> <!-- item-bigを追加 -->
@@ -53,10 +53,11 @@
     </main>
 
     <footer>
-        <div id="resetbtn" class="sai-btn">再チャレンジ</button></div>
+        <div id="resetbtn" class="sai-btn">Re-défi（もう一回？）</button></div>
 
     </footer>
     <script>
+
         // おすすめの場所が出る乱数は３
         // おすすめの絵・代表作は、場所に紐づく
         // [おすすめは」「場所」「絵」は順番にふわっと出てくる
@@ -91,6 +92,7 @@
             $("#osusume_title").html(view3);
             $("#osusume_ba").html(view1);
             $("#osusumme_e").html(view2);
+            $("#hiddenosusume").css("visibility","visible");
 
         });
 
@@ -125,6 +127,7 @@
           $("#osusume_title").html(view3);
           $("#osusume_ba").html(view1);
           $("#osusumme_e").html(view2);
+          $("#hiddenosusume").css("visibility","visible");
 
       });
 
@@ -159,6 +162,7 @@
           $("#osusume_title").html(view3);
           $("#osusume_ba").html(view1);
           $("#osusumme_e").html(view2);
+          $("#hiddenosusume").css("visibility","visible");
 
       });
 

@@ -79,6 +79,11 @@ footer{
 }
 */
 
+ 
+#hiddenosusume {
+    visibility: hidden;   /*最初にコンテンツを非表示にします*/ 
+}
+
 .susum{
     display: inline-block;
     font-size: 1.5rm;
@@ -105,6 +110,11 @@ footer{
     text-align: center;
 }
 
+#resetbtn {
+    visibility: hidden;
+    color: #FFF;
+    background-color:#806c57 ;
+}
 
 p{
     font-size:100%;
@@ -113,7 +123,7 @@ p{
 }
 ul{
     padding: 0;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #fff;
     display:table;  /* 定義 */
     table-layout: fixed;
     width:100%;
@@ -121,13 +131,16 @@ ul{
 }
 li{
     list-style-type:none;
-    border: 1px solid #666;
+    border: 1px solid #fff;
     background-color: #FFF;
     display:table-cell;  /* 定義 */
     cursor: pointer;
 }
 li:hover{
-    background: #0066CC;
+    background-color:  #bad4d1;
     color:#fff;
 }
 
+footer {
+    background-color:#806c57 ;
+}
